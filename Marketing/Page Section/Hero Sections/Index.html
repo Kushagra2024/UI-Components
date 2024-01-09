@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Hero Section</title>
+</head>
+
+<body class="bg-slate-950 min-w-[320px] min-h-[120vh]">
+
+    <!-- Header Sectiion Starts from here -->
+    <header>
+        <nav class="flex justify-between text-gray-50 px-8 py-5">
+            <!-- Logo image -->
+            <div class="h-9 w-9 cursor-pointer">
+                <a href="#">
+                    <img class="w-full h-full" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                        alt="logo">
+                </a>
+            </div>
+            <!-- Navigation menu -->
+            <div>
+                <ul class="hidden gap-12
+                lg:flex lg:mb-12">
+                    <li class="cursor-pointer">Product</li>
+                    <li class="cursor-pointer">Features</li>
+                    <li class="cursor-pointer">Marketplace</li>
+                    <li class="cursor-pointer">Company</li>
+                </ul>
+            </div>
+            <!-- Login Button -->
+            <div>
+                <button class="hidden
+                lg:block">
+                    Log in <span>&#8594;</span>
+                </button>
+                <button id="menu-Openbtn">
+                    <span class="text-2xl
+                    lg:hidden">
+                        &#9776;
+                    </span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <div class="hidden
+        lg:hidden" id="mobile-menu">
+            <div class="fixed inset-0 z-50">
+                <div class="fixed inset-y-0 w-full bg-slate-950 right-0 px-6 py-6 text-white overflow-y-auto
+                sm:max-w-sm sm:ring-1 sm:ring-slate-900">
+                    <div class="flex justify-between items-center mb-10 p-2">
+                        <div class="h-9 w-9 cursor-pointer">
+                            <a href="#">
+                                <img class="w-full h-full"
+                                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="logo">
+                            </a>
+                        </div>
+                        <div class="text-gray-50 cursor-pointer rounded-full p-2 hover:bg-slate-900" id="menu-CloseBtn">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <ul class="flex flex-col gap-5 text-gray-50 font-semibold">
+                            <li class="cursor-pointer p-2 rounded-md hover:bg-slate-900">Product</li>
+                            <li class="cursor-pointer p-2 rounded-md hover:bg-slate-900">Features</li>
+                            <li class="cursor-pointer p-2 rounded-md hover:bg-slate-900">Marketplace</li>
+                            <li class="cursor-pointer p-2 rounded-md hover:bg-slate-900">Company</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button class="mt-16 text-white font-semibold py-2 px-2 ">
+                            Log in
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header Section end here -->
+
+    <!-- Main section starts here -->
+    <main class="flex flex-col gap-8 items-center px-8 mt-12
+    sm:mt-28">
+        <div class="hidden py-1 px-4 border-[1px] border-gray-500 hover:border-gray-300 hover:shadow-sm hover:shadow-gray-500 border-solid rounded-2xl cursor-pointer
+            sm:block">
+            <p class="text-gray-400">Announcing our next round of funding. <span class="text-blue-800">Read More
+                    &#8594;</span>
+            </p>
+        </div>
+        <div>
+            <h1 class="text-gray-50 text-4xl font-semibold text-center max-w-[600px]
+            sm:text-6xl sm:font-bold">Data to enrich your online business</h1>
+        </div>
+        <div>
+            <p class="text-gray-400  text-center text-lg font-semibold max-w-[600px]">Anim aute id magna aliqua ad ad
+                non deserunt
+                sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
+                fugiat veniam occaecat fugiat aliqua.
+            </p>
+        </div>
+        <div class="flex items-center gap-3
+        sm:gap-8">
+            <button class="bg-indigo-600 hover:bg-indigo-500 rounded-md text-white text-sm font-semibold py-2 px-3">Get
+                Started</button>
+            <p class="text-gray-400 font-semibold cursor-pointer">Learn More <span
+                    class="text-gray-400 text-xl">&#8594;</span></p>
+        </div>
+    </main>
+    <!-- Main section ends here -->
+
+    <script src="./script.js"></script>
+</body>
+</html>
